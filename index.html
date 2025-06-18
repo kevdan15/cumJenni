@@ -38,19 +38,13 @@
       left: 0;
       z-index: -1;
     }
-
-    audio {
-      display: none;
-    }
   </style>
 </head>
 <body>
   <h1 onclick="reaccion()">🎂 ¡Feliz Cumple, Jenni! 🎈</h1>
   <canvas id="confettiCanvas"></canvas>
-  <audio id="audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoplay loop></audio>
 
   <script>
-    // confeti
     const canvas = document.getElementById("confettiCanvas");
     const ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
@@ -108,7 +102,6 @@
 
     setInterval(draw, 20);
 
-    // mensaje interactivo
     function reaccion() {
       alert("🎊 ¡Que tu día esté lleno de magia, Jenni! 🎊");
     }
